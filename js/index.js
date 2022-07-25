@@ -31,16 +31,19 @@ function removeProduct(event) {
 
 // ITERATION 5
 function createProduct() {
-  const target = event.currentTarget;
+  const name = document.querySelector('.create-product input[type = text]').innerHTML;
+  const price = document.querySelector('.create-product input[type = number]').value;
 }
 
 window.addEventListener('load', () => {
   const calculatePricesBtn = document.getElementById('calculate');
   calculatePricesBtn.addEventListener('click', calculateAll);
+  //Remove Product 
   const removeButton = document.querySelectorAll('.btn-remove');
   for (let i = 0; i < removeButton.length; i++){
     removeButton[i].addEventListener('click', removeProduct);
   }
+  //Create Product
   const createProductButton = document.querySelector('.create-product');
   createProductButton.addEventListener('click', createProduct); 
 });
