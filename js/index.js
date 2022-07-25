@@ -32,8 +32,7 @@ function removeProduct(event) {
 // ITERATION 5
 function createProduct() {
   const name = document.querySelector('.create-product').firstElementChild.firstElementChild;
-  const price = document.querySelector('.create-product td input[type = number]').value;
-  console.log(name, price);
+  const price = document.querySelector('.create-product input[type="number"]');
   const newProduct = document.createElement('tr');
   newProduct.innerHTML = 
   `<tr class="product">
@@ -50,7 +49,6 @@ function createProduct() {
   </td>`;
   const table = document.querySelector("tbody");
   table.appendChild(newProduct);
-  //really can't figure this one out :( 
 }
 
 window.addEventListener('load', () => {
