@@ -50,7 +50,7 @@ function createProduct() {
   </td>`;
   const table = document.querySelector("tbody");
   table.appendChild(newProduct);
-  //cant figure this one out to save my life.
+  //really can't figure this one out :( 
 }
 
 window.addEventListener('load', () => {
