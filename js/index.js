@@ -48,6 +48,7 @@ function createProduct() {
     <button class="btn btn-remove">Remove</button>
   </td>`;
   const table = document.querySelector("tbody");
+  newProduct.querySelector('.btn-remove').addEventListener('click', removeProduct);
   table.appendChild(newProduct);
 }
 
